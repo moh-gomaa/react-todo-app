@@ -1,5 +1,4 @@
 import { useState } from "react";
-import TodoItem from "./TodoItem";
 import TodosList from "./TodosList";
 import TodoForm from "./TodoForm";
 
@@ -9,7 +8,7 @@ export default function Todo() {
   return (
     <div>
       <TodoForm todosLst={todosLst} setTodosLst={setTodosLst} />
-      <TodosList todosLst={todosLst} />
+      <TodosList todosLst={todosLst} setTodosLst={setTodosLst} />
     </div>
   );
 }
